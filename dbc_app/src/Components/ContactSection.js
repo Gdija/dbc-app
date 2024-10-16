@@ -5,11 +5,11 @@ import { faPhone, faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-
 
 function ContactSection() {
   return (
-    <Container>
+    <Container >
       <Flex
-        w={400}
-        bg="gray.3"
-        gap="md"
+        w={300}
+        // bg="yellow"
+        gap={10}
         justify="center"
         align="flex-start"
         direction="column"
@@ -17,9 +17,9 @@ function ContactSection() {
         mt={20}
         ml={70}
       >
-        <Title ml={10} pt={10} order={2}> Coordonnées</Title>
+        <Title ml={10} pb={3} pt={5} order={2}> Coordonnées</Title>
         {/* Phone Number */}
-        <Box display={"flex"}>
+        <Box display={"flex"} >
           <FontAwesomeIcon
             icon={faPhone}
             style={{
@@ -35,7 +35,7 @@ function ContactSection() {
           style={{
             width: "350px",
             border: "1px solid black",
-            marginTop: "2px",
+            marginTop: "1px",
             marginBottom: "10px",
             marginLeft: "10px",
           }}

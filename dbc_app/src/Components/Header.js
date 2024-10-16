@@ -5,14 +5,8 @@ import { faPhone, faEnvelope, faMessage,} from "@fortawesome/free-solid-svg-icon
 
 function Header() {
   return (
-    <header
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Container>
+   
+      <Container px={0}>
         <Box
           style={{
             display: "flex",
@@ -27,7 +21,6 @@ function Header() {
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              overflow: "hidden",
             }}
           >
             <svg
@@ -42,20 +35,20 @@ function Header() {
           <Flex
           style={{
             width: 'fit-content',
-            height: '176px',
-            border: '2px solid red',
+            height: '170px',
+            // border: '2px solid red',
             borderRadius: '20px',
-            marginTop: '-120px',
+            marginTop: '-140px',
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: 'white',
             flexDirection: 'row',
           }}>
-            
-            <Avatar radius="xd" src={null} alt="no image here" 
-            style={{ width: '128px', height: '176px', marginRight: '29px' }} 
+                        {/* User image */}
+
+            <Avatar radius="lg" src={null} alt="no image here" 
+            style={{ width: '128px', height: '176px', marginRight: '39px'}} 
             />
-            {/* User image */}
             <Group >
 
               {/* User info */}
@@ -64,14 +57,14 @@ function Header() {
                 <Text align="center">JS Developer</Text>
                 <Text align="center">GLM</Text>
 
-                <Group spacing={20} mt={24} position="center">
-                <Avatar radius="xl" size={45} color="black">
+                <Group spacing={10} mt={24} position="center">
+                <Avatar radius="xl" size={50} color="white" bg={"black"}>
                     <FontAwesomeIcon icon={faPhone} />
                     </Avatar>
-                  <Avatar radius="xl" size={45} color="black">
+                  <Avatar radius="xl" size={50} color="white" bg={"black"}>
                       <FontAwesomeIcon icon={faEnvelope} />
                   </Avatar>
-                  <Avatar radius="xl" size={45} color="black">
+                  <Avatar radius="xl" size={50} color="white" bg={"black"}>
                       <FontAwesomeIcon icon={faMessage} />
                   </Avatar>
                 </Group>
@@ -80,7 +73,6 @@ function Header() {
           </Flex>
         </Box>
       </Container>
-    </header>
   );
 }
 
