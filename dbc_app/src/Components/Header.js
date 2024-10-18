@@ -44,18 +44,20 @@ function Header() {
             backgroundColor: 'white',
             flexDirection: 'row',
           }}>
-                        {/* User image */}
+            {/* User image */}
 
             <Avatar radius="lg" src={null} alt="no image here" 
-            style={{ width: '128px', height: '176px', marginRight: '39px'}} 
+            style={{ width: '138px', height: '170px', marginRight: '30px', marginLeft: '1px'}} 
             />
             <Group >
 
               {/* User info */}
               <Box mr={20} mt={12} >
-                <Title order={4} align="center">Ismail Ettaoussi</Title>
-                <Text align="center">JS Developer</Text>
-                <Text align="center">GLM</Text>
+                <Box align="flex-start" pl={8}>
+                    <Title order={4}>Ismail Ettaoussi</Title>
+                    <Text>JS Developer</Text>
+                    <Text>GLM</Text>
+                </Box>
 
                 <Group spacing={10} mt={24} position="center">
                 <Avatar radius="xl" size={50} color="white" bg={"black"}>

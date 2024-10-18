@@ -1,5 +1,5 @@
 // import "./App.css";
-import BusCard from "./BusCard";
+import BusCardTest from "./BusCardTest";
 import { MantineProvider } from "@mantine/core";
 import '@mantine/core/styles.css';
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">    
       <MantineProvider>
-        <BusCard />
+        <BusCardTest />
       </MantineProvider>    
 
     </div> 

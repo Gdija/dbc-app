@@ -22,7 +22,7 @@ function SocialMedia() {
         my={20}
         ml={70}
       >
-        <Title ml={10} mb={-9} pt={5} order={2}>
+        <Title ml={10}  pt={-2} mt={-3} order={2}>
           Réseaux Sociaux
         </Title>
         <Group gap={40} mt={8} mb={-4} ml={10} position="center">
