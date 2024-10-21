@@ -16,20 +16,20 @@ function SocialMediaTest() {
 
   // const avatarIcons = [faFacebookF, faTwitter, faLinkedin, faInstagram];
   
-  const containerWidth = extraSmall ? '85%' : smallScreen? '90%' : mediumScreen ? '90%' : '100%';
+  const containerWidth = extraSmall ? '80%' : smallScreen? '90%' : mediumScreen ? '90%' : '100%';
 
-  const avatarSize = extraSmall ? 40 : smallScreen ? 50 : mediumScreen ? 55 : 60;
-  const iconsGap = extraSmall ? 41 : smallScreen ? 65 : mediumScreen ? 55 : 60;
-  const titleMargLeft = extraSmall ? 0 : smallScreen ? 0 : mediumScreen ? 0 : 25;
-  const iconsMargLeft = extraSmall ? -4 : smallScreen ? 0 : mediumScreen ? 0 : 25;
-  const containerMargLeft = extraSmall ? 10 : smallScreen ? 9 : mediumScreen ? 0 : 0;
+  const avatarSize = extraSmall ? 35 : smallScreen ? 50 : mediumScreen ? 55 : 60;
+  const iconsGap = extraSmall ? 39.5 : smallScreen ? 65 : mediumScreen ? 55 : 60;
+  const titleMargLeft = extraSmall ? '2%' : smallScreen ? 0 : mediumScreen ? 0 : 25;
+  const iconsMargLeft = extraSmall ? '2%' : smallScreen ? 0 : mediumScreen ? 0 : 25;
+  const containerMargLeft = extraSmall ? '-3%' : smallScreen ? 9 : mediumScreen ? 0 : 0;
   return (
     <Container style={{ width: containerWidth, margin: 'auto' }}>
       <Flex
         w="100%"
         // bd={"2px solid black"}
         // bg="blue"
-        gap={extraSmall ? 'md' : 'md'}
+        gap={extraSmall ? 'xs' : 'md'}
         justify="center"
         align="flex-start"
         direction="column"

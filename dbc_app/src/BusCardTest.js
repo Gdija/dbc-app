@@ -10,7 +10,7 @@ function BusCardTest() {
     //   style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '100vh' }}
     // >
     <Container
-    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', border: '2px solid black', backgroundColor:"rgba(232, 230, 230, 1)", width: '100%', maxWidth: '500px',  paddingLeft: '0px', paddingRight: '0px'}}>
+    style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', border: '2px solid black', backgroundColor:"rgba(232, 230, 230, 1)", width: '100%', maxWidth: '500px',  paddingLeft: '0px', paddingRight: '0px', marginTop:'20px',}}>
       <Flex
         // w={"fit-content"}
         // bg="rgba(232, 230, 230, 1)"
@@ -38,7 +38,7 @@ function BusCardTest() {
       <HeaderTest />
       <ContactSectionTest />
       <SocialMediaTest />
-    </Container>
+   </Container>
     // </Container>
   );
 }
