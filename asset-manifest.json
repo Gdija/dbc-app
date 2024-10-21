@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/dbc_app/static/css/main.47b509f1.css",
+    "main.js": "/dbc_app/static/js/main.26fefd90.js",
+    "index.html": "/dbc_app/index.html",
+    "main.47b509f1.css.map": "/dbc_app/static/css/main.47b509f1.css.map",
+    "main.26fefd90.js.map": "/dbc_app/static/js/main.26fefd90.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.47b509f1.css",
+    "static/js/main.26fefd90.js"
+  ]
+}
