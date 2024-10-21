@@ -36,7 +36,7 @@ const containerWidth = extraSmall
         mt={20}
         ml={-140}
       >
-        <Title ml={10} pb={3} pt={5} order={2} color={'yellow'}> Coordonnées</Title>
+        <Title ml={10} pb={3} pt={5} order={2} mt={-3} color={'yellow'}> Coordonnées</Title>
         {/* Phone Number */}
         <Box display={"flex"} >
           <FontAwesomeIcon
