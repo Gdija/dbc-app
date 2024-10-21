@@ -19,7 +19,10 @@ function SocialMediaTest() {
   const containerWidth = extraSmall ? '85%' : smallScreen? '90%' : mediumScreen ? '90%' : '100%';
 
   const avatarSize = extraSmall ? 40 : smallScreen ? 50 : mediumScreen ? 55 : 60;
-   const iconsGap = extraSmall ? 41 : smallScreen ? 65 : mediumScreen ? 55 : 60;
+  const iconsGap = extraSmall ? 41 : smallScreen ? 65 : mediumScreen ? 55 : 60;
+  const titleMargLeft = extraSmall ? 0 : smallScreen ? 0 : mediumScreen ? 0 : 25;
+  const iconsMargLeft = extraSmall ? -4 : smallScreen ? 0 : mediumScreen ? 0 : 25;
+  const containerMargLeft = extraSmall ? 10 : smallScreen ? 9 : mediumScreen ? 0 : 0;
   return (
     <Container style={{ width: containerWidth, margin: 'auto' }}>
       <Flex
@@ -31,13 +34,13 @@ function SocialMediaTest() {
         align="flex-start"
         direction="column"
         wrap="wrap"
-        my={20}
-        // ml={-40}
+        my={10}
+        ml={containerMargLeft}
       >
-        <Title align='left' ml={extraSmall ? 0 : 10} pt={5}  mt={-3} order={2}>
+        <Title align='left' ml={titleMargLeft} pt={5}  mt={-3} order={2}>
           Réseaux Sociaux
         </Title>
-        <Group gap={iconsGap} mt={-3} mb={-4} ml={extraSmall ? 0 : 5} position="center">
+        <Group gap={iconsGap} mt={-3} mb={-4} ml={iconsMargLeft} position="center">
           <Avatar radius="xl" size={avatarSize} color="white" bg={"black"}>
             <FontAwesomeIcon icon={faFacebookF} />
           </Avatar>
