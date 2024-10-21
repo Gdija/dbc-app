@@ -6,7 +6,6 @@ import {
   Text,
   Title,
   Flex,
-  useMantineTheme,
 } from "@mantine/core";
 import { useMediaQuery } from '@mantine/hooks';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -19,26 +18,29 @@ import ResponsiveAvatar from "./responsiveAvatar";
 
 
 
-function Header() {
-  const theme = useMantineTheme();
+function HeaderTest() {
+  // const theme = useMantineTheme();
   const icons = [faPhone, faEnvelope, faMessage];
 
-  const smallScreen = useMediaQuery('(max-width: 576px)');
-  const mediumScreen = useMediaQuery('(max-width: 768px)');
-  const largeScreen = useMediaQuery('(max-width: 992px)');
-
+  const extraSmall = useMediaQuery('(max-width: 576px)');
+  const smallScreen = useMediaQuery('(min-width: 577px) and (max-width: 768px)');
+  const mediumScreen = useMediaQuery('(min-width: 768px) and (max-width: 992px)');
+  const largeScreen = useMediaQuery('(min-width: 1024px)');
+// box width and height based on screen size
+  const infoWidth = extraSmall ? 300 : smallScreen ? 400 : mediumScreen ? 410 : largeScreen ? 420 : 410;
+  const infoHeight = extraSmall ? 150 : smallScreen ? 200 : mediumScreen ? 200 : largeScreen ? 240 : 300;
+  
   // Calculate avatar size based on screen size
-  const avatarWidth = smallScreen ? 107 : mediumScreen ? 150 : largeScreen ? 150 : 170; 
-  const avatarHeight = smallScreen ? 150 : mediumScreen ? 200 : largeScreen ? 150 : 170;
+  const avatarWidth = extraSmall ? 107 : smallScreen ? 150 : mediumScreen ? 150 : largeScreen ? 150 : 170; 
+  const avatarHeight = extraSmall ? 150 : smallScreen ? 200 : mediumScreen ? 200 : largeScreen ? 235 : 170;
+  
   // const { classes } = useStyles();
 
-  // box width and height based on screen size
-  const infoWidth = smallScreen ? 300 : mediumScreen ? 400 : largeScreen ? 300 : 300;
-  const infoHeight = smallScreen ? 150 : mediumScreen ? 200 : largeScreen ? 300 : 300;
+  
   
   // texte size based on screen size in info size
-  const titleSize = smallScreen ? 15 : mediumScreen ? 25 : largeScreen ? 20 : 20;
-  const textSize = smallScreen ? 12 : mediumScreen ? theme.fontSizes.md : largeScreen ? 15 : 15;
+  const titleSize = extraSmall ? 18 : smallScreen ? 25 : mediumScreen ? 25 : largeScreen ? 28 : 20;
+  const textSize = extraSmall ? 16 : smallScreen ? 23 : mediumScreen ? 23 : largeScreen ? 23 : 15;
   return (
     <Container px={0}>
       <Box
@@ -97,8 +99,8 @@ function Header() {
                 pl={8}
               >
                 <Title order={4} size={titleSize}>Ismail Ettaoussi</Title>
-                <Text size={textSize}>JS Developer</Text>
-                <Text >GLM</Text>
+                <Text style={{ fontSize: `${textSize}px` }}>JS Developer</Text>
+                <Text style={{ fontSize: `${textSize}px` }}>GLM</Text>
               </Box>
 
               <Group
@@ -142,4 +144,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default HeaderTest;
